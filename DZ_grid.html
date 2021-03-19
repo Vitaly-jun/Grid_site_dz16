@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        body p {
+            margin: 5px 0;
+        }
+
+        #checkbox-menu {
+            display: none;
+        }
+
+        header {
+            grid-column: 1/2;
+            grid-row: 1/2;
+
+        }
+
+        nav {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            display: flex;
+            align-items: center;
+            background-color: #8fc73e;
+        }
+
+        nav a {
+            color: #333;
+            font-size: 1em;
+            text-decoration: none;
+            font-weight: bold;
+            padding-left: 35px;
+            padding-right: 5px;
+        }
+
+        main a {
+            text-decoration: none;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 50px 1fr 15px 1fr 15px 1fr 30px;
+            grid-row-gap: 10px;
+            width: 940px;
+            height: 100vh;
+            margin: 0 15px;
+        }
+
+
+        .grid1 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            display: grid;
+            grid-template-columns: 1fr 370px;
+            grid-template-rows: 320px;
+            grid-column-gap: 1em;
+
+        }
+
+        .grid2 {
+            grid-column: 1/2;
+            grid-row: 5/6;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 20px;
+        }
+
+        .grid3 {
+            grid-column: 1/2;
+            grid-row: 7/8;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 20px;
+            background-color: #e5e5e6;
+            padding: 0 5px;
+        }
+
+        .line1 {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+
+        .line2 {
+            grid-column: 1/2;
+            grid-row: 6/7;
+        }
+
+        hr {
+            border: none;
+            background-color: #8fc73e;
+            height: 15px;
+            margin: 0;
+        }
+
+        h2,
+        h3,
+        h4 {
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 4.5vw;
+        }
+
+        main,
+        aside {
+            border: 10px solid #e5e5e6;
+        }
+
+        main {
+            padding: 0 15px;
+        }
+
+        h3 {
+            color: #1162b7;
+        }
+
+        footer {
+            grid-column: 1/2;
+            grid-row: 8/9;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MY MAGAZINE</h1>
+    </header>
+    <nav>
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu">
+            <a href="#">Articles</a>
+            <a href="#">Topics</a>
+            <a href="#">About</a>
+            <a href="#">Editors</a>
+            <a href="#">Contact</a>
+        </label>
+    </nav>
+    <div class="grid1">
+        <main>
+            <h2>Lorem ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ratione facere obcaecati voluptatibus vitae nihil voluptates, quaerat esse corporis incidunt asperiores officia tempore provident modi optio molestias! Saepe harum aliquid dolor vel aperiam nesciunt iure, provident, nobis magnam, deserunt modi consectetur incidunt? Ullam suscipit illo magni ex laudantium provident, accusantium nihil alias deleniti dolor, ratione harum sunt dolorem ducimus quia doloremque architecto aperiam enim modi rem aspernatur, dignissimos? Quasi, obcaecati.</p>
+            <a href="#">Finish reading...</a>
+        </main>
+        <aside>
+            <div class="fake-img"><img src="https://place-hold.it/350x300" alt="empty"></div>
+        </aside>
+    </div>
+    <div class="line1">
+        <hr>
+    </div>
+    <div class="grid2">
+        <div>
+            <h3>Lorem ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quibusdam, atque laudantium totam maiores assumenda dolorem facere, quo saepe voluptatem. Eligendi veritatis, reprehenderit delectus quaerat nam perferendis saepe, sed tempora unde placeat officia sunt, voluptatem nostrum accusamus incidunt iusto at quasi. Inventore ipsum quos ratione. Iste voluptatibus, provident cum illum.</p>
+        </div>
+        <div>
+            <h3>Lorem ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque placeat amet harum dicta adipisci. Quam, dolores aperiam sit expedita temporibus neque iste tempora eius, facilis, architecto, velit. Quisquam, voluptas qui facilis vero perferendis inventore deserunt, corporis iste, ad, vel soluta aut tenetur accusantium itaque cum harum explicabo sed sunt nihil.</p>
+        </div>
+        <div>
+            <h3>Lorem ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut blanditiis ab accusantium quibusdam hic nihil quos asperiores aliquam tempora placeat! Repellat soluta unde magnam recusandae doloremque in ex totam eos est! Rerum perspiciatis, fuga! Distinctio, repellat suscipit eaque, ipsum earum odio officia esse, architecto voluptatum ducimus reprehenderit! Omnis, ab possimus!</p>
+        </div>
+        <div>
+            <h3>Lorem ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex fugiat aspernatur quo quisquam laudantium est, harum voluptatibus assumenda iusto quibusdam quis tempora pariatur voluptatum commodi dignissimos eius ullam repudiandae fuga optio error eaque quos atque ratione cupiditate. Vitae laudantium voluptatem debitis dicta velit repellat architecto ex. Quos ullam autem placeat!</p>
+        </div>
+    </div>
+    <div class="line2">
+        <hr>
+    </div>
+    <div class="grid3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at consequatur doloribus, corrupti nulla natus nesciunt? Consequatur maiores deserunt eligendi sequi natus, corporis provident, architecto, fuga dolor sapiente incidunt. Dolore!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit harum cupiditate dolor, accusantium itaque! Laudantium ullam doloremque sapiente eum id non praesentium voluptas quae, iusto tempora optio totam accusamus accusantium.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minima aperiam sed magni in qui ipsam quidem earum adipisci labore consequuntur vitae dolor nulla, accusantium. Perferendis eius ratione, quaerat magni.</p>
+    </div>
+    <footer>
+        <h4>&copy; My Magazine</h4>
+    </footer>
+
+</body>
+
+</html>
